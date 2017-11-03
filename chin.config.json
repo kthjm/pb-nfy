@@ -1,0 +1,23 @@
+{
+  "development": {
+    "put": "src",
+    "out": ".local",
+    "process": {},
+    "weirs": [["script", ["jsEmbedHtml", "utf8"]]],
+    "ignore": {
+      "targets": ["favicon.png", "script/ganalytics.js"]
+    }
+  },
+  "production": {
+    "put": "src",
+    "out": ".site",
+    "process": {},
+    "weirs": [
+      ["script", ["jsEmbedHtml", "utf8"]],
+      ["favicon.png", "pngToFavicons"]
+    ],
+    "ignore": {
+      "targets": ["script/onerror.js"]
+    }
+  }
+}
