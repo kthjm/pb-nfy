@@ -11,9 +11,9 @@ use in case that import page from other i think.
 docs: [redirects](https://www.netlify.com/docs/redirects/)
 
 #### `.nvmrc`
-i can't use this. => [Imcomplete with .nvmrc #101](https://github.com/netlify/build-image/issues/101).  
+relate: [Imcomplete with .nvmrc #101](https://github.com/netlify/build-image/issues/101).  
 docs: [build-settings](https://www.netlify.com/docs/build-settings/)
 
 #### domain manegement
-- [Using a custom domain](https://www.netlify.com/docs/custom-domains/)
-- [NetlifyとGithubで独自ドメインのサイトをHTTPS化したメモ](http://magcho.hatenablog.jp/entry/2017/10/15/023440)
+relate: [NetlifyとGithubで独自ドメインのサイトをHTTPS化したメモ](http://magcho.hatenablog.jp/entry/2017/10/15/023440)  
+docs: [Using a custom domain](https://www.netlify.com/docs/custom-domains/)
