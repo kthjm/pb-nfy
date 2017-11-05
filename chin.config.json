@@ -3,9 +3,9 @@
     "put": "src",
     "out": ".local",
     "process": {},
-    "weirs": [["script", ["jsEmbedHtml", "utf8"]]],
+    "weirs": [["embed", ["jsEmbed", "utf8"]]],
     "ignore": {
-      "targets": ["favicon.png", "script/ganalytics.js"]
+      "targets": ["favicons", "embed/ganalytics.js"]
     }
   },
   "production": {
@@ -13,11 +13,11 @@
     "out": ".site",
     "process": {},
     "weirs": [
-      ["script", ["jsEmbedHtml", "utf8"]],
-      ["favicon.png", "pngToFavicons"]
+      ["embed", ["jsEmbed", "utf8"]],
+      ["favicons", "pngToFavicons"]
     ],
     "ignore": {
-      "targets": ["script/onerror.js"]
+      "targets": ["embed/onerror.js"]
     }
   }
 }
