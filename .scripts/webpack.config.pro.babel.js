@@ -3,7 +3,7 @@ import merge from 'webpack-merge'
 import { resolve } from 'path'
 import baseConfig from './webpack.config.base.babel.js'
 
-baseConfig.entry.mobile.unshift(`whatwg-fetch`, `babel-polyfill`)
+baseConfig.entry.unshift(`whatwg-fetch`, `babel-polyfill`)
 
 export default merge(baseConfig, {
   output: {

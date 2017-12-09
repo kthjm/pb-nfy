@@ -5,9 +5,9 @@ import hastToReactElement from 'rehype-react'
 import hastToHtml from 'rehype-stringify'
 import { createElement } from 'react'
 
-export const htmlToFormat = html =>
+export const htmlToFormat = (html, fragment) =>
   unified()
-    .use(htmlToHast, { position: false })
+    .use(htmlToHast, { position: false, fragment })
     .use(hastToFormat)
     .use(hastToHtml)
     .processSync(html).contents

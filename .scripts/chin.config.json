@@ -1,0 +1,40 @@
+{
+  "DEVELOPMENT": {
+    "put": "./asset",
+    "out": "./.local",
+    "process": {},
+    "weirs": [
+      ["./embed", ["EmbedJs", "utf8"]]
+    ],
+    "ignore": {
+      "targets": [
+        "./favicons",
+        "./embed/ganalytics.js",
+        "./embed/uappend.js"
+      ]
+    }
+  },
+
+  "PRODUCTION": {
+    "put": "./asset",
+    "out": "./.site",
+    "process": {},
+    "weirs": [
+      ["./favicons", "EmbedFavicons"]
+    ],
+    "ignore": {
+      "targets": [
+        "./embed"
+      ]
+    }
+  },
+
+  "INKSCHIN": {
+    "put": "./ikc",
+    "out": "./asset",
+    "weirs": [
+      ["./png", ["InkPngWhite", null, "stream"]],
+      ["./svg", "OptimizeSvg"]
+    ]
+  }
+}

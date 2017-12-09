@@ -1,7 +1,7 @@
 import { DllReferencePlugin, HotModuleReplacementPlugin } from 'webpack'
 import merge from 'webpack-merge'
 import { resolve } from 'path'
-import manifest from './.local/dll.manifest.json'
+import manifest from '../.local/dll.manifest.json'
 import baseConfig from './webpack.config.base.babel.js'
 
 const PORT = 7000,

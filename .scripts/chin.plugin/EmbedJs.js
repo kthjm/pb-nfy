@@ -1,6 +1,6 @@
 import { transform as babelTransform } from 'babel-core'
 import { createElement } from 'react'
-import htmlBomb from "../htmlBomb"
+import htmlBomb from './.html'
 
 export default opts => {
   return data => {

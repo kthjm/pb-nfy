@@ -1,12 +1,20 @@
 import { createElement } from 'react'
 import Bomb from './Bomb.js'
-import Html from "./Html.js"
+import Html from './Html.js'
 
 const { CHIN_ENV, CHIN_OUT } = process.env
 
 const requiresMap = {
-  development: ['onerror', 'dll', 'uappend'],
-  production: ['favicons', 'ganalytics', 'uappend']
+  DEVELOPMENT: [
+    'onerror',
+    'dll',
+    // 'uappend'
+  ],
+  PRODUCTION: [
+    'favicons',
+    // 'ganalytics',
+    // 'uappend'
+  ]
 }
 
 const bomb = new Bomb({
@@ -15,8 +23,11 @@ const bomb = new Bomb({
   requires: requiresMap[CHIN_ENV]
 })
 
-if (CHIN_ENV === 'development') {
+if (CHIN_ENV === 'DEVELOPMENT') {
   bomb.setProp('dll', createElement('script', { src: './dll.js' }))
 }
+// else if (CHIN_ENV === 'PRODUCTION') {
+//   bomb._out()
+// }
 
 export default bomb

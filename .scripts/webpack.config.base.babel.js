@@ -4,12 +4,9 @@ const nodeModulesPath = resolve('node_modules')
 
 export default {
   context: process.cwd(),
-  entry: {
-    mobile: [resolve(`mobile/index.js`)],
-    desktop: [resolve(`desktop/index.js`)]
-  },
+  entry: [resolve(`app/index.js`)],
   output: {
-    filename: '[name].js'
+    filename: 'bundle.js'
   },
   module: {
     rules: [
