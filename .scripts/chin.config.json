@@ -4,7 +4,9 @@
     "out": "./.local",
     "process": {},
     "weirs": [
-      ["./embed", ["EmbedJs", "utf8"]]
+      ["./embed/onerror.js", {
+        "js": ["EmbedJs", "utf8"]
+      }]
     ],
     "ignore": {
       "targets": [
@@ -20,7 +22,9 @@
     "out": "./.site",
     "process": {},
     "weirs": [
-      ["./favicons", "EmbedFavicons"]
+      ["./favicons/favicons.png", {
+        "png": "EmbedFavicons"
+      }]
     ],
     "ignore": {
       "targets": [

@@ -1,6 +1,2 @@
-require('babel-register')
-
-module.exports = Object.assign({},
-  require('chin-plugins-inkscape'),
-  require('./chin.plugin')
-)
+require('babel-register');
+module.exports = require('./chin.plugins.js').default
